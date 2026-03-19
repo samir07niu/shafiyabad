@@ -164,6 +164,57 @@
     .nav-links { display: none; }
     .menu-icon { display: flex; }
 }
+        /* 📱 MOBILE RESPONSIVE REFINEMENT */
+@media (max-width: 768px) {
+    /* 1. Header Text Fix */
+    .header h1 {
+        font-size: 2rem !important; /* Mobile par heading chhoti ho jayegi */
+        letter-spacing: 1px !important;
+    }
+
+    /* 2. Grid Fix (Ab cards side-by-side nahi, ek ke niche ek aayenge) */
+    .grid-dashboard {
+        grid-template-columns: 1fr !important; 
+        padding: 10px !important;
+    }
+
+    /* 3. Village Banner Height Fix */
+    .village-photo-banner div {
+        height: 250px !important; /* Mobile par photo ki height kam kar di */
+    }
+
+    /* 4. Hall of Fame Grid Fix */
+    .hall-of-fame-grid-container {
+        grid-template-columns: 1fr !important;
+        padding: 15px !important;
+    }
+
+    /* 5. Footer Layout Fix (All columns stacked) */
+    .footer-content-grid, 
+    .footer-main-grid {
+        grid-template-columns: 1fr !important; /* Columns ko vertical kar diya */
+        gap: 30px !important;
+        text-align: center;
+    }
+
+    /* Footer Ticker and Branding centering */
+    .footer-section, .brand-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 6. Map and Ticker responsiveness */
+    .footer-map-frame, .modern-map-wrapper {
+        height: 200px !important;
+    }
+
+    .footer-bottom-bar, .footer-bottom {
+        flex-direction: column !important;
+        gap: 15px;
+        text-align: center;
+    }
+}
 
     </style>
 </head>
